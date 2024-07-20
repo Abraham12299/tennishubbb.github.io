@@ -1,0 +1,423 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('photos/land\ view.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white; /* Ensuring text is visible over the background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    padding: 2% 0.5%; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Take full width */
+    justify-content: space-between; /* Ensure space between logo and links */
+}
+
+nav a img {
+    width: 100px; /* Adjusted width to fit better */
+}
+
+.nav-links {
+    display: flex;
+    flex: 1; /* Take remaining space */
+    justify-content: flex-end; /* Align nav links to the right */
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 10px; /* Adjusted padding */
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: rgb(241, 235, 235); /* Change this color to match your design */
+    font-weight: bold;
+    font-size: 14px; /* Adjusted font size to fit better */
+}
+
+.main {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.letter {
+    font-size: 100px;
+    margin-top: 20px; /* Added margin to separate it from the header */
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s; /* orange color for hover effect time*/
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%; /* Adjusted to ensure text-box is well positioned */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid #bd370e;
+    padding: 12px 35px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #1c2a44;
+    background: #105fa8;
+    transition: 1s;
+}
+
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+}
+
+/* Program Section Styles */
+.program-section {
+    margin-top: 400px; /* Adjusted margin to push down the section */
+    text-align: center; /* Center align the text */
+    width: 80%; /* Center content by limiting width */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.program-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.program-section p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff; /* Ensuring text is visible over the background */
+}
+
+/* ---Course Section Styles--- */
+.course {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px; /* Adjusted padding for spacing */
+}
+
+.course h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.course p {
+    color: #9db2e0;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Added gap between course columns */
+    margin-top: 20px; /* Added margin for spacing */
+}
+
+.course-col {
+    flex-basis: 31%;
+    background: rgba(28, 155, 228, 0.1); /* Adjusted background color */
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px; 
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.course-col h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.course-col p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.course-col:hover{ 
+    box-shadow: #a31515;
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+
+/* ---Course Section Styles--- */
+.campus{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+ 
+/* ---This is for the images under the GLobal Fac.--- */
+.campus-col{ 
+    flex-basis: 32%;
+    border-radius: 100px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.campus-col img{
+    width: 80%;  /* --- Width of the photo's (Land Scape, Hard court, Clay court)--- */
+    display: block;
+}
+
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background:  rgba(16, 33, 39, 0.7);;
+}
+
+.layer h3{
+    width: 100%;
+    font-weight: 50%;
+    color: #9db2e0;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* --- testimonials of pro's--- */
+/* Testimonials Section */
+.testimonials {
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.testimonials .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonial-col {
+    flex-basis: 30%;
+    background: #d34a13;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    transition: transform 0.3s ease-in-out;
+}
+
+.testimonial-col:hover {
+    transform: translateY(-10px);
+}
+
+.testimonial-col img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.testimonial-col h3 {
+    margin-top: 10px;
+}
+
+.testimonial-col .fa {
+    color: orange;
+    
+}
+
+/* Adjustments for small screens */
+@media (max-width: 700px) {
+    .text-box h1 {
+        font-size: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .testimonial-col {
+        flex-basis: 100%;
+    }
+}
+
+
+/* Call to Action */
+.cta {
+    margin: 100px auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(photos/paddle\ court.jpg); /* Increased transparency for visibility */
+    background-position: center;
+    background-size: 150%; /* Make the image cover the entire container */
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+/* Enroll and Contact Section */
+.enroll-section {
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Faded black background */
+    border-radius: 10px;
+}
+
+.enroll-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.enroll-section p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #fff; /* Ensuring text is visible over the background */
+}
+
+/* Contact Us Button */
+.contact-btn {
+    display: inline-block;
+    background-color: #bd370e; /* Button background color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.contact-btn:hover {
+    background-color: #a31515; /* Darker shade on hover */
+}
+
+/* Example usage */
+.contact-btn-container {
+    text-align: center; /* Adjust as needed */
+    margin-top: 30px; /* Adjust spacing */
+}
+
+
+/* Styling for the navigation */
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 10px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* Styling for the section */
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 62px;
+}

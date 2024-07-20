@@ -1,0 +1,104 @@
+/* General styling for body and html */
+body, html {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set a default font */
+    height: 100%; /* Ensure the body takes full height */
+}
+
+/* Styling for the header containing the navigation links */
+.header {
+    width: 100%;
+    height: 60px; /* Set height for the header */
+    position: fixed;
+    top: 0;
+    padding: 10px 20px; /* Add padding */
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center;
+    background-color: #06288f; /* Background color for the header */
+    color: aqua;
+    z-index: 1000; /* Ensure the header stays on top */
+}
+
+/* Styling for the navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Full width */
+    justify-content: space-between; /* Space between logo and links */
+}
+
+/* Styling for the logo image in the navigation bar */
+nav a img {
+    width: 80px; /* Width of the logo */
+}
+
+/* Styling for the navigation links */
+.nav-links {
+    display: flex;
+    flex: 1; /* Take remaining space */
+    justify-content: flex-end; /* Align nav links to the right */
+}
+
+.nav-links ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Styling for individual list items in the navigation links */
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 10px; /* Padding for list items */
+}
+
+/* Styling for the links in the navigation bar */
+.nav-links ul li a {
+    text-decoration: none; /* Remove underline */
+    color: aqua; /* Link color */
+    font-weight: bold;
+    font-size: 14px; /* Font size for links */
+}
+
+/* Styling for each background section */
+.background-section {
+    height: 100vh; /* Full viewport height */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    color: white; /* Text color */
+    text-align: center; /* Center text */
+}
+
+/* Background image for Section A */
+#section-a {
+    color: #ffffff;
+    font-size: large;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('photos/background\ 4.jpg');
+
+    background-image: linear-gradient( rgba (4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('photos/background\ 3.jpg'); /* Replace with your image URL */
+}
+
+/* Background image for Section B */
+#section-b {
+    background-image: linear-gradient( rgba (4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('photos/background\ 3.jpg'); /* Replace with your image URL */
+
+    background-image: url('background 4.jpg'); /* Replace with your image URL */
+}
+
+/* Background image for Section C */
+#section-c {
+   background-color: rgb(21, 7, 146);
+}
+
+/* Styling for the button container */
+.button-container {
+    position: fixed;
+    bottom: 20px; /* Position at the bottom */
+    width: 100%;
+    text-align: center;
+}

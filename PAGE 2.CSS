@@ -1,0 +1,145 @@
+/* General styling for body and html */
+body, html {
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    font-family: Arial, sans-serif; /* Set a default font */
+}
+
+/* Styling for the background image */
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(rgba(46, 82, 223, 0.7), rgba(4, 9, 30, 0.7)), url('land\ view.jpg');
+}
+
+/* Styling for the header containing the welcome message */
+.letter {
+    color: aqua;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 200px; /* Added margin to separate it from the header */
+}
+
+/* Styling for the button container */
+.button-container {
+    position: down;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Ensuring the header of all pages stay the same and fixed. */
+.header {
+    width: 100%;
+    height: 5%;
+    position: fixed;
+    top: 0;
+    padding: 1% 0.5%; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between; /* Space between logo and nav links */
+    align-items: center;
+    background-color: #06288f; /* Added background color to header */
+    color: aqua;
+}
+
+/* Styling for the navigation bar */
+nav {
+    display: flex;
+    align-items: center;
+    width: 100%; /* Take full width */
+    justify-content: space-between; /* Ensure space between logo and links */
+}
+
+/* Styling for the logo image in the navigation bar */
+nav a img {
+    width: 100px; /* Adjusted width to fit better */
+}
+
+/* Styling for the navigation links */
+.nav-links {
+    display: flex;
+    flex: 1; /* Take remaining space */
+    justify-content: flex-end; /* Align nav links to the right */
+}
+
+.nav-links ul {
+    list-style: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Styling for individual list items in the navigation links */
+.nav-links ul li {
+    display: inline-block;
+    padding: 8px 10px; /* Adjusted padding */
+}
+
+/* Styling for the links in the navigation bar */
+.nav-links ul li a {
+    text-decoration: none; /* Remove underline */
+    color: aqua; /* Change this color to match your design */
+    font-weight: bold;
+    font-size: 14px; /* Adjusted font size to fit better */
+}
+
+/* Styling for the content container that holds the image and thank you message */
+.thank-you-section {
+    width: 100%;
+    background-color: lightgray; /* Light gray background for the section */
+    padding: 50px 0; /* Padding for spacing */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Styling for the container holding the image and message side by side */
+.content-container {
+    display: flex; /* Use flexbox to align items side by side */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center content horizontally */
+    max-width: 1200px; /* Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+}
+
+/* Styling for the new section with cream background */
+.thank-you-section-cream {
+    width: 100%;
+    background-color: #cfc72c; /* Cream background for the section */
+    padding: 50px 0; /* Padding for spacing */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+
+/* Styling for the new section with cream background */
+.thank-you-section-cream2 {
+    width: 100%;
+    background-color: #363406; /* Cream background for the section */
+    padding: 50px 0; /* Padding for spacing */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+
+/* Styling for the container with image on the right and message on the left */
+.content-container-reverse {
+    display: flex; /* Use flexbox to align items side by side */
+    align-items: center; /* Vertically center items */
+    justify-content: center; /* Center content horizontally */
+    max-width: 1200px; /* Limit the maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    flex-direction: row-reverse; /* Reverse the order of items */
+}
+
+/* Styling for the image */
+.coach {
+    width: 350px; /* Set the width to a smaller size */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0 20px; /* Space between the image and the message */
+}
+
+/* Styling for the thank you message */
+.thank-you-message {
+    background-color: white; /* Keep the background plain white */
+    padding: 20px;
+    border-radius: 10px; /* Add some border radius for better appearance */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
